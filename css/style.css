@@ -1,0 +1,293 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(144, 195, 197);
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+#navbarNav {
+    width: auto;
+    flex-grow: 0;
+}
+
+header .nav-link {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: solid 4px transparent;
+    color: black;
+}
+
+header .nav-link:hover {
+    border-bottom: solid 4px #000;
+}
+
+#slider button:hover {
+    color: white;
+}
+
+#slider {
+    margin-top: 100px;
+    background: url(../assets/slider-bg.svg) no-repeat bottom;
+    background-size: contain;
+}
+
+main h2 {
+    text-transform: uppercase;
+}
+
+main h4 {
+    color: rgba(124, 124, 118, 0.938);
+    font-weight: 500;
+}
+
+#servicos h2 {
+    text-transform: uppercase;
+}
+
+#servicos h4 {
+    color: rgba(124, 124, 118, 0.938);
+    font-weight: 500;
+}
+
+#servicos a {
+    display: block;
+    background-color: #d0d1de;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    transition: all ease-out 0.2s;
+}
+
+#servicos a:hover {
+    box-shadow: 0px 0px 10px 0px;
+    transform: scale(1.05);
+    background-color: #fff;
+}
+
+#servicos img {
+    max-height: 100px;
+}
+
+#clientes img {
+    filter: grayscale(80%);
+    max-height: 70px;
+}
+
+#clientes a:hover img {
+    filter: none;
+}
+
+#clientes a {
+    border: solid 1px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-out 0.2s;
+    height: 100px;
+}
+
+#clientes a:hover {
+    background-color: white;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+#atendimento {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #d0d1de;
+    border-radius: 5px;
+}
+
+#atendimento .imagem {
+    margin-left: -70px;
+    color: #b4b4b4;
+    line-height: 26px;
+}
+
+#atendimento .imagem span {
+    color: #364f6b;
+    font-size: 110px;
+    line-height: 110px;
+    letter-spacing: -10px;
+    font-weight: 900;
+    display: block;
+}
+
+#atendimento .telefone {
+    display: flex;
+    color: #b4b4b4;
+}
+
+#atendimento .telefone span {
+    font-size: 25px;
+    color: #797979;
+    font-weight: 900;
+    display: block;
+}
+
+#atendimento .imagem p {
+    font-size: 25px;
+}
+
+#portifolio .badge {
+    font-weight: 400;
+}
+
+#portifolio img {
+    border-radius: 5px;
+    transition: all ease-out 0.2s;
+}
+
+#portifolio img:hover {
+    box-shadow: 0 0 30px 0 rgb(0, 0, 0);
+}
+
+#porifolio .button-group {
+    margin-bottom: 30px;
+}
+
+#portifolio button {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    outline: none;
+    transition: all ease-out 0.2s;
+    color: rgba(0, 0, 0, 0.486);
+}
+
+#portifolio button:hover {
+    transform: scale(1.1);
+    color: #fd425e83;
+}
+
+#portifolio button.active {
+    color: #fd425f;
+}
+
+footer .email {
+    border-radius: 5px;
+    background-color: #364f6b;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 30px;
+}
+
+footer .email img {
+    position: absolute;
+    left: 30px;
+    top: -30px;
+}
+
+footer .email form {
+    width: 60%;
+    display: flex;
+}
+
+footer .email .form-control,
+footer .email .form-control::placeholder {
+    background-color: transparent;
+    color: white;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+footer ul li {
+    display: flex;
+}
+
+footer ul li a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition: all ease-out 0.2s;
+}
+
+footer ul li a:hover {
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+    background-color: white;
+}
+
+footer ul li img {
+    max-height: 20px;
+}
+
+@media (max-width: 575.98px) {
+    #atendimento .imagem span {
+        font-size: 55px;
+    }
+
+    #atendimento .imagem p {
+        font-size: 20px;
+        letter-spacing: -1px;
+    }
+
+    #atendimento .telefone span {
+        font-size: 15px;
+    }
+
+    #atendimento .telefone p {
+        font-size: 15px;
+    }
+
+    #atendimento .imagem img {
+        max-height: 150px;
+    }
+
+    #atendimento .telefone img {
+        max-height: 40px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    footer .email img {
+        width: 120px;
+        top: -40px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    footer .email {
+        padding: 60px 30px 50px 30px;
+    }
+
+    footer .email form {
+        width: 100%;
+        flex-direction: column;
+    }
+    footer .email img {
+        width: 90px;
+        top: -40px;
+    }
+
+    footer ul {
+        padding-top: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+}
